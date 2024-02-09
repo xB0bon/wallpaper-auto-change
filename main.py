@@ -19,7 +19,7 @@ def czas():
             ctypes.windll.user32.SystemParametersInfoW(20, 0, dzien, 3)
         elif 17 <= string_czasu <= 19:
             ctypes.windll.user32.SystemParametersInfoW(20, 0, bardzowczesnanoc, 3)
-        elif 20 <= string_czasu <= 22:
+        elif 20 <= string_czasu <= 21:
             ctypes.windll.user32.SystemParametersInfoW(20, 0, wczesnanoc, 3)
     except Exception as e:
         print(e)
